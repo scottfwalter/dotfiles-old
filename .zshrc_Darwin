@@ -1,0 +1,12 @@
+export CLOUD="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
+#integrate with iTerm
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+#show apple banner
+archey -c -o
+
+if ls --color -d . >/dev/null 2>&1; then
+    alias ls="ls --color"
+else
+    alias ls="ls -G"
+fi
