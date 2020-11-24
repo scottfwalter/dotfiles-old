@@ -1,3 +1,5 @@
+# GITSTATUS_LOG_LEVEL=DEBUG
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -125,8 +127,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
-# # # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 #################################
 # PATH
@@ -134,3 +137,4 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 alias ibrew='arch -x86_64 /usr/local/bin/brew'
 alias ibash="/usr/local/bin/bash"
+

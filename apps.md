@@ -1,31 +1,148 @@
 # Software
 
+## Waiting For Apple Silicon
+* [Docker](https://docs.docker.com/docker-for-mac/install/)
+* [Karabiner Elements](https://karabiner-elements.pqrs.org)
+* [Nik Collection](https://nikcollection.dxo.com)
+* [Screenflow](http://www.telestream.net/screenflow/overview.htm)
+* [Tech Tools Pro](https://www.micromat.com/products/techtool-pro)
+* [Topaz Adjust](https://topazlabs.com/shop/)
+* [Topaz Denoise](https://topazlabs.com/shop/)
+* [Topaz Mask](https://topazlabs.com/shop/)
+* [Loopback](https://rogueamoeba.com/loopback/)
+* [Grammerly](https://www.grammarly.com/native/mac)
+* [Audacity](https://www.audacityteam.org)
+
+## To Install
+* [Capture One](https://www.captureone.com/en)
+
+## Audio
+* [AirFoil](https://rogueamoeba.com/airfoil/mac/)
+* [Audiobook Builder](https://apps.apple.com/us/app/audiobook-builder-2/id1437681957?mt=12)
+* [Tooth Fairy](https://c-command.com/toothfairy/)
+
 ## Core
 * Dropbox
-* Endpoint VPN https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk170513
+* [Endpoint VPN](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk170513)
 * Google Chrome
-* [Password Manager for Families, Businesses, Teams | 1Password](https://1password.com)
+* [1Password](https://1password.com)
+* [SetApp](https://setapp.com)
 
 ## Creative
-* Adobe Cloud
+* [Aurora HDR](https://skylum.com/account/my-software#)
+* [Adobe Cloud](https://www.adobe.com/creativecloud.html)
 * [‎Affinity Designer on the Mac App Store](https://apps.apple.com/us/app/affinity-designer/id824171161?mt=12)
 * [‎Affinity Photo on the Mac App Store](https://apps.apple.com/us/app/affinity-photo/id824183456?mt=12)
+* [Affinity Publisher](https://apps.apple.com/us/app/affinity-publisher/id881418622?mt=12)
+* [Color Slurp](https://apps.apple.com/us/app/colorslurp/id1287239339?mt=12)
+* [Color Squid](https://apps.apple.com/us/app/colorsquid-color-scheme-designer/id1057705278?mt=12)
+* [DXO PhotoLab](https://shop.dxo.com)
+* [Fast Raw Viewer](https://www.fastrawviewer.com)
+* [Figma](https://www.figma.com/downloads/)
 * [‎Final Cut Pro on the Mac App Store](https://apps.apple.com/us/app/final-cut-pro/id424389933?mt=12)
+* [iConvert Icons](https://apps.apple.com/us/app/iconvert-icons/id515197296?mt=12)
+* [Image Vectorizer](https://apps.apple.com/us/app/image-vectorizer/id789656124?mt=12)
+* [Logoist 4](https://apps.apple.com/us/app/logoist-4/id1493005285?mt=12)
+* [Luminar](https://skylum.com/account/my-software#)
+* [Microsoft Edge](https://www.microsoft.com/en-us/edge)
 * [‎Motion on the Mac App Store](https://apps.apple.com/us/app/motion/id434290957?mt=12)
+* [On1 Photo Raw](https://www.on1.com)
 * [‎Pixelmator Pro on the Mac App Store](https://apps.apple.com/us/app/pixelmator-pro/id1289583905?mt=12)
 * [‎Vectornator: Design Software on the App Store](https://apps.apple.com/us/app/vectornator-design-software/id1219074514)
+* [XScope](https://apps.apple.com/us/app/xscope-4/id889428659?mt=12)
+
+## Desktop Mac Only
+* [Arq](https://www.arqbackup.com)
+* [Carbon Copy Cloner](https://bombich.com)
+* [Harmony Bridge](https://apps.apple.com/us/app/harmony-bridge/id1450752761?mt=12)
+* [Logi Options](https://www.logitech.com/en-us/product/options)
+* [Luna Display](https://shop.astropad.com)
+* [Monogram Creator](https://monogramcc.com/shop)
+* [Plex](https://www.plex.tv)
+* [ScanSnap](http://scansnap.fujitsu.com/global/dl/)
+* [Spyder](https://spyderx.datacolor.com)
+* [Stream Deck](https://www.elgato.com/en/gaming/stream-deck)
+* [Transmission](https://transmissionbt.com)
+* [Wacom Tablet](https://www.wacom.com/en-us/support/product-support/drivers)
 
 ## Dev
+* [BBEdit](https://apps.apple.com/us/app/bbedit/id404009241?mt=12)
+* [Codye](https://apps.apple.com/us/app/codye/id1516894961)
+* [Insomnia](https://insomnia.rest/download/#mac)
 * [iTerm2 - macOS Terminal Replacement](https://iterm2.com)
+* [Kaleidoscope](https://kaleidoscope.app/download)
+* [Paw](https://paw.cloud)
 * [Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com)
-* [‎Xcode on the Mac App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12)*
+* [‎Xcode on the Mac App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+
+## Networks
+* [TunnelBear](https://www.tunnelbear.com)
 
 ## Productivity
+* [Agenda](https://agenda.com)
+* [Air Table](https://airtable.com/mac)
+* [AnyList](https://www.anylist.com/mac)
+* [Annotate](https://apps.apple.com/us/app/annotate-capture-and-share/id918207447?mt=12)
+* [Banktivity](https://apps.apple.com/us/app/banktivity/id1480779512)
 * [‎Bear on the Mac App Store](https://apps.apple.com/us/app/bear/id1091189122?mt=12)
+* [Calca](https://apps.apple.com/us/app/calca/id635758264?mt=12)
+* [DevonThink](https://www.devontechnologies.com)
+* [Drafts](https://apps.apple.com/us/app/drafts/id1435957248?mt=12)
+* [File Cabinet Pro](https://imazing.com)
+* [Firefox](https://www.mozilla.org/en-US/firefox/developer/)
+* [Home Design 3d Gold](https://apps.apple.com/us/app/home-design-3d-gold/id955414427?mt=12)
+* [Keep It](https://apps.apple.com/us/app/keep-it/id1272768911?mt=12)
 * [‎Keynote on the Mac App Store](https://apps.apple.com/us/app/keynote/id409183694?mt=12)
+* [Kindle](https://apps.apple.com/us/app/kindle/id405399194?mt=12)
+* [Marked](https://apps.apple.com/us/app/marked-2-markdown-preview/id890031187?mt=12)
+* [Mind Node](https://apps.apple.com/us/app/mindnode-mind-map/id1289197285?mt=12)
 * [‎Numbers on the Mac App Store](https://apps.apple.com/us/app/numbers/id409203825?mt=12)
 * [‎Pages on the Mac App Store](https://apps.apple.com/us/app/pages/id409201541?mt=12)
+* [Paprika](https://apps.apple.com/us/app/paprika-recipe-manager-3/id1303222628?mt=12)
+* [PDFPen Pro](https://smilesoftware.com/pdfpenpro/#)
+* [Presentify](https://presentify.compzets.com)
+* [Screen Flick](https://www.araelium.com/screenflick-mac-screen-recorder)
+* [Soulver](https://apps.apple.com/us/app/soulver-3/id1508732804?mt=12)
+* [Spark](https://apps.apple.com/us/app/spark-email-app-by-readdle/id1176895641?mt=12)
+* [subtrack](https://apps.apple.com/us/app/subtrack-track-subscriptions/id1519946553)
+* [Todoist](https://todoist.com)
 
 ## Utilities
+* [1Blocker](https://apps.apple.com/us/app/1blocker-for-safari/id1107421413?mt=12)
+* [Alfred](https://www.alfredapp.com)
+* [BackBlaze](https://www.backblaze.com)
+* [Bartender](https://www.macbartender.com/Bartender4/)
+* [A Better Finder Attributes](https://www.publicspace.net/ABetterFinderAttributes/index.html)
+* [A Better Finder Rename](https://www.publicspace.net/ABetterFinderRename/index.html)
+* [Better Touch Tool](https://folivora.ai)
+* [Blackmagic Disk Speed Test](https://apps.apple.com/us/app/blackmagic-disk-speed-test/id425264550?mt=12)
+* [Clean My Mac](https://macpaw.com/cleanmymac)
+* [Clean Shot X](https://cleanshot.com/?ref=setapp)
+* [Copied](https://apps.apple.com/us/app/copied/id1026349850)
+* [Daisy Disk](https://apps.apple.com/us/app/daisydisk/id411643860?mt=12)
+* [Default Folder X](https://www.stclairsoft.com/index.html)
+* [Find Any File](https://apps.tempel.org/FindAnyFile/)
+* [Hazel](https://www.noodlesoft.com)
+* [iMazing](https://imazing.com)
+* [iStats Menu](https://bjango.com/mac/istatmenus/)
+* [Keyboard Cleaner](http://jan.prima.de/~jan/plok/archives/48-Keyboard-Cleaner.html)
+* [Keyboard Maestro](https://www.keyboardmaestro.com/main/)
+* [Lingon X](https://www.peterborgapps.com/lingon/)
+* [NetIquette](https://objective-see.com/products/netiquette.html)
+* [PopClip](https://apps.apple.com/us/app/popclip/id445189367?mt=12)
+* [Rectangle](https://rectangleapp.com)
+* [Right Font](https://rightfontapp.com)
+* [Sloth](https://sveinbjorn.org/sloth)
+* [TextExpander](https://textexpander.com)
+* [Transmit](https://panic.com/transmit/)
+* [The Clock](https://apps.apple.com/us/app/the-clock/id488764545?mt=12)
+* [Radio Silence](https://radiosilenceapp.com)
 * [‎Yoink - Improved Drag and Drop on the Mac App Store](https://apps.apple.com/us/app/yoink-improved-drag-and-drop/id457622435?mt=12)
+
+## Video
+* [Downie](https://software.charliemonroe.net/downie/)
+* [IINA](https://iina.io)
+* [Handbrake](https://github.com/HandBrake/HandBrake/releases)*
+* [Permute](https://software.charliemonroe.net/permute/)
+* [Video File List](https://apps.apple.com/us/app/video-file-list/id1263472847?mt=12)
 
