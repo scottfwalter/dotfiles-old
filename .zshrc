@@ -50,64 +50,65 @@ source ~/bin/zsh/zsh-vim-mode.plugin.zsh
 # #################################
 # # Auto Complete
 # #################################
-# autoload -U compinit
-# zstyle ':completion:*' menu select
-# zmodload zsh/complist
-# compinit
-# _comp_options+=(globdots)		# Include hidden files.
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)		# Include hidden files.
 
 # #################################
 # # GREP
 # #################################
-# export GREP_OPTIONS='--color=auto --exclude-dir=.svn --exclude-dir=target'
+export GREP_OPTIONS='--color=auto --exclude-dir=.svn --exclude-dir=target'
 
 # #################################
 # # GIT
 # #################################
-# alias gpush="echo pushing to `git rev-parse --abbrev-ref HEAD` && sleep 3 && git push origin `git rev-parse --abbrev-ref HEAD`"
-# alias gpm="git fetch origin master && git merge origin/master"
-# alias module-version="npm list --depth=0 | grep "
+alias gpush="echo pushing to `git rev-parse --abbrev-ref HEAD` && sleep 3 && git push origin `git rev-parse --abbrev-ref HEAD`"
+alias gpm="git fetch origin master && git merge origin/master"
+alias module-version="npm list --depth=0 | grep "
 
 
 # #################################
 # # Set platform variable
 # #################################
-# case $(uname) in
-#     Darwin)
-#     # macOS specific code goes here
-#     export platform="mac"
-#     ;;
+case $(uname) in
+    Darwin)
+    # macOS specific code goes here
+    export platform="mac"
+    ;;
 
-#     Linux)
-#     export platform="linux"
-#     alias ls="ls --color"
-#     ;;
+    Linux)
+    export platform="linux"
+    alias ls="ls --color"
+    ;;
 
-#     *)
-#     export platform="other"
-#     # Other platforms code goes here
-# esac
+    *)
+    export platform="other"
+    # Other platforms code goes here
+esac
 
-# platform_zshrc=${ZDOTDIR:-$HOME}/.zshrc_$(uname)
-# if [[ -r $platform_zshrc ]]; then
-#     source $platform_zshrc
-# fi
+platform_zshrc=${ZDOTDIR:-$HOME}/.zshrc_$(uname)
+if [[ -r $platform_zshrc ]]; then
+    source $platform_zshrc
+fi
 
 # #################################
 # # Set Editor
 # #################################
-# #if [[ -x "/usr/local/bin/code" ]]; then
-# #    export EDITOR="/usr/local/bin/code -W"
-# #fi
-# export EDITOR="vim"
+if [[ -x "/usr/local/bin/code" ]]; then
+   export EDITOR="/usr/local/bin/code -W"
+fi
+export EDITOR="vim"
 
 # #################################
 # # Source Additional Files
 # #################################
 # files=('.zshrc_prompt' '.zshrc_functions' '.zshrc_colors')
-# for f in $files; do
-#   . ~/$f
-# done
+files=('.zshrc_functions' '.zshrc_colors')
+for f in $files; do
+  . ~/$f
+done
 
 # #################################
 # # Node JS
@@ -125,7 +126,7 @@ export NVM_DIR="$HOME/.nvm"
 
 
 
-# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
