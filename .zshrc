@@ -124,10 +124,6 @@ export NVM_DIR="$HOME/.nvm"
 # alias lsn="ls . | tr '\n' '\0' | xargs -0 -n 1 basename"
 
 
-
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme

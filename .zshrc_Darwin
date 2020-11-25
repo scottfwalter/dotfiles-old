@@ -1,6 +1,7 @@
 export CLOUD="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
 #integrate with iTerm
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+#test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
 #show apple banner
 archey -c -o
