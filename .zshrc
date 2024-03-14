@@ -1,11 +1,6 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # GITSTATUS_LOG_LEVEL=DEBUG
-
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
 
 #################################
 # Basic options
@@ -13,7 +8,6 @@ fi
 setopt AUTO_CD
 setopt NO_CASE_GLOB
 setopt GLOB_COMPLETE
-#setopt shwordsplit
 unsetopt correct_all
 
 #################################
@@ -26,26 +20,25 @@ setopt HIST_REDUCE_BLANKS
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 
 #################################
-# Core
-#################################
-alias zshreload="source ~/.zshrc"
-alias cwd="pwd | pbcopy"
-
-#################################
 # vi command line editing
 #################################
 bindkey -v
 export KEYTIMEOUT=1
 
-# Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
-#bindkey -M vicmd '^e' edit-command-line
 bindkey -M vicmd v edit-command-line
 
 MODE_CURSOR_VICMD="green blinking bar"
 MODE_CURSOR_VIINS="#red block"
 MODE_CURSOR_SEARCH="#ff00ff steady underline"
-source ~/bin/zsh/zsh-vim-mode.plugin.zsh
+
+# #################################
+# # Set Editor
+# #################################
+if [[ -x "/usr/local/bin/code" ]]; then
+   export EDITOR="/usr/local/bin/code -W"
+fi
+export EDITOR="vim"
 
 # #################################
 # # Auto Complete
@@ -60,14 +53,6 @@ _comp_options+=(globdots)		# Include hidden files.
 # # GREP
 # #################################
 export GREP_OPTIONS='--color=auto --exclude-dir=.svn --exclude-dir=target'
-
-# #################################
-# # GIT
-# #################################
-alias gpush="echo pushing to `git rev-parse --abbrev-ref HEAD` && sleep 3 && git push origin `git rev-parse --abbrev-ref HEAD`"
-alias gpm="git fetch origin master && git merge origin/master"
-alias module-version="npm list --depth=0 | grep "
-
 
 # #################################
 # # Set platform variable
@@ -88,24 +73,10 @@ case $(uname) in
     # Other platforms code goes here
 esac
 
-platform_zshrc=${ZDOTDIR:-$HOME}/.zshrc_$(uname)
-if [[ -r $platform_zshrc ]]; then
-    source $platform_zshrc
-fi
-
-# #################################
-# # Set Editor
-# #################################
-if [[ -x "/usr/local/bin/code" ]]; then
-   export EDITOR="/usr/local/bin/code -W"
-fi
-export EDITOR="vim"
-
 # #################################
 # # Source Additional Files
 # #################################
-# files=('.zshrc_prompt' '.zshrc_functions' '.zshrc_colors')
-files=('.zshrc_functions' '.zshrc_colors')
+files=('.zshrc_alias_functions' '.zshrc_colors' '.zshrc_cxone' '.zshrc.local')
 for f in $files; do
   . ~/$f
 done
@@ -113,25 +84,65 @@ done
 # #################################
 # # Node JS
 # #################################
-# #Use system version of Node
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # T
 
-# nvm use 10.16.0
 
-# ##
-# alias lsn="ls . | tr '\n' '\0' | xargs -0 -n 1 basename"
+if [ "`uname -m`"  = 'arm64' ]; then
+    export BREW_PREFIX="/opt/homebrew"
+else
+    export BREW_PREFIX="/usr/local"
+fi
 
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+#################################
+# RUBY
+#################################
+export GEMS=$BREW_PREFIX/lib/ruby/gems/3.0.0/bin
+export PATH="$BREW_PREFIX/opt/ruby/bin:$PATH"
+export LDFLAGS="-L/$BREW_PREFIX/opt/ruby/lib"
+export CPPFLAGS="-I/$BREW_PREFIX/opt/ruby/include"
+export PKG_CONFIG_PATH="/$BREW_PREFIX/opt/ruby/lib/pkgconfig"
 
 #################################
 # PATH
 #################################
-export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
-alias ibrew='arch -x86_64 /usr/local/bin/brew'
-alias ibash="/usr/local/bin/bash"
+export PATH="/opt/homebrew/bin:/usr/local/bin:$HOME/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export ICLOUD="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
 
+
+#################################
+# macOS
+#################################
+platform_zshrc=${ZDOTDIR:-$HOME}/.zshrc_$(uname)
+if [[ -r $platform_zshrc ]]; then
+    source $platform_zshrc
+fi
+
+#################################
+# Starship
+#################################
+export STARSHIP_CONFIG=~/.starship-config/starship.toml
+eval "$(starship init zsh)"
+
+#################################
+# Java
+#################################
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/scott/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+eval "$(fnm env --use-on-cd)"
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+# bun completions
+[ -s "/Users/scott/.bun/_bun" ] && source "/Users/scott/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

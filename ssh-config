@@ -1,0 +1,19 @@
+#Host *
+#  AddKeysToAgent yes
+#  UseKeychain yes
+#  IdentityFile ~/.ssh/id_rsa
+
+Host ssh.github.com github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+
+Host jedha
+  #HostName  208.68.36.223
+  HostName scottwalter.net
+  User root
+  ProxyJump root@jump.scottwalter.net:80
+
+# Fig ssh integration. Keep at the bottom of this file.
+Match all
+  Include ~/.fig/ssh

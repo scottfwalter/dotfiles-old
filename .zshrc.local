@@ -1,0 +1,4 @@
+export GITHUB_USER=scottfwalter
+export GITHUB_USER_NICE=scottwalter-nice
+#export GITHUB_TOKEN=$(op item get "Github (Personal)" --fields "Access Token")
+#export GITHUB_TOKEN_NICE=$(op item get "Github (Nice)" --fields "Access Token")
