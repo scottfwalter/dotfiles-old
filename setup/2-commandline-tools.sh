@@ -9,83 +9,11 @@ BREW_PREFIX=$(brew --repository)
 # brew install coreutils
 brew install coreutils
 
-
 # Tmux
 brew install tmux
 
 # MAS - Install App Store
 brew install mas
-
-###########################################
-# File Management
-###########################################
-
-# rclone
-brew install rclone
-
-# Midnight Commander
-brew install mc
-
-# tree
-brew install tree
-
-# DUF https://github.com/muesli/duf
-brew install duf
-
-# Tag
-brew install tag
-
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
-brew install findutils
-
- # https://github.com/sharkdp/bat#installation
- brew install bat
-
-# https://dev.yorhel.nl/ncdu
- brew install ncdu
-
-# https://github.com/ogham/exa
-brew install exa
-
-# FZF
-brew isntall fzf
-
-
-###########################################
-# Searching
-###########################################
-
-# Ripgrep https://github.com/BurntSushi/ripgrep
-brew install ripgrep
-
-# Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed
-
-
-
-###########################################
-#System Info
-###########################################
-
-# archey - system information
-brew install archey
-
-
-###########################################
-#Process Management
-###########################################
-# htop
-brew install htop
-
-# BTop
-brew install btop
-
-###########################################
-#Networking
-###########################################
-# GPing
-npm install gping
-
 
 ###########################################
 #Dev Tools
@@ -102,6 +30,9 @@ brew install jo
 
 # JQ https://stedolan.github.io/jq/
 brew install jq
+
+# JQ https://github.com/noahgorstein/jqp
+brew install jqap
 
 #YQ https://github.com/mikefarah/yq
 brew install yq
@@ -136,12 +67,53 @@ brew install lazygit
 # NeoVim
 brew install neovim
 
+# Git Delta
+brew install git-delta
 
-
-
+# TLDR
+brew install tealdeer
 
 ###########################################
-#JSON, CSV, XML, PDF
+#Docker
+###########################################
+brew install lazydocker
+
+###########################################
+# File Management
+###########################################
+
+# rclone
+brew install rclone
+
+# Midnight Commander
+brew install mc
+
+# tree
+brew install tree
+
+# DUF https://github.com/muesli/duf
+brew install duf
+
+# Tag
+brew install tag
+
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
+brew install findutils
+
+# https://github.com/sharkdp/bat#installation
+brew install bat
+
+# https://dev.yorhel.nl/ncdu
+ brew install ncdu
+
+# https://github.com/ogham/exa
+brew install exa
+
+# FZF
+brew isntall fzf
+
+###########################################
+#File Processing - JSON, CSV, XML, PDF
 ###########################################
 # https://github.com/antonmedv/fx
 npm install -g fx
@@ -162,6 +134,56 @@ brew install gs
 # ffmpeg
 brew install ffmpeg
 
+# yt-dlp
+brew install yt-dlp
+
+# imagemagick
+brew install imagemagick
+
+###########################################
+#Networking
+###########################################
+# GPing
+npm install gping
+
+# Speedtest
+brew tap teamookla/speedtest && brew update && brew install speedtest
+
+# Wifi Password
+brew install wifi-password
+
+###########################################
+#Process Management
+###########################################
+# htop
+brew install htop
+
+# BTop
+brew install btop
+
+###########################################
+#Productivity
+###########################################
+brew install mailsy
+
+###########################################
+# Searching
+###########################################
+
+# Ripgrep https://github.com/BurntSushi/ripgrep
+brew install ripgrep
+
+# Install GNU `sed`, overwriting the built-in `sed`.
+brew install gnu-sed
+
+###########################################
+#System Info
+###########################################
+
+# archey - system information
+brew install archey
+
+
 ###########################################
 #Shell Customization
 ###########################################
@@ -169,9 +191,4 @@ brew install starship
 
 # Gum
 brew install gum
-
-###########################################
-#Docker
-###########################################
-brew install lazydocker
 

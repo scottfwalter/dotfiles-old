@@ -123,7 +123,7 @@ fi
 #################################
 # Starship
 #################################
-export STARSHIP_CONFIG=~/.starship-config/starship.toml
+#export STARSHIP_CONFIG=~/.starship-config/starship.toml
 eval "$(starship init zsh)"
 
 #################################

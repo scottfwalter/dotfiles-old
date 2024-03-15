@@ -7,19 +7,38 @@
 	safecrlf = false
 	hooksPath = ~/.git-hooks
 	excludesfile = ~/.gitignore
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustexitcode = true
+
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true    # use n and N to move between diff sections
+	light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+
 [merge]
-	tool = Kaleidoscope
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+	conflictstyle = diff3
+
+#[mergetool "Kaleidoscope"]
+#	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+#	trustexitcode = true
+#[merge]
+#	tool = Kaleidoscope
+#[difftool "Kaleidoscope"]
+#	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
 	prompt = false
-[mergetool]
-	prompt = false
+
+#[mergetool]
+#	prompt = false
+
+#[diff]
+#	tool = Kaleidoscope
+
 [diff]
-	tool = Kaleidoscope
+	colorMoved = default
+
 [alias]
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
 	br = branch
