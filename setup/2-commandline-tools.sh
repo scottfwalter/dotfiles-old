@@ -52,6 +52,9 @@ brew install trdsql
 # https://github.com/so-fancy/diff-so-fancy
 brew install diff-so-fancy
 
+# entr
+brew install entr
+
 # Python
 brew install pyenv
 # brew install python

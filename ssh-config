@@ -13,7 +13,3 @@ Host jedha
   HostName scottwalter.net
   User root
   ProxyJump root@jump.scottwalter.net:80
-
-# Fig ssh integration. Keep at the bottom of this file.
-Match all
-  Include ~/.fig/ssh
